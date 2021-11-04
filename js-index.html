@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!-- my CSS  -->
+	<link href="myStyles.css" rel="stylesheet" >
+
+	<!-- javascript -->
+	<script type="text/javascript">
+		//javascript goes here inside script tags
+		//document.write("Hi"); //write direct to webpage
+		document.write("<h1>Some More Information About Mathematical Sciences</h1>"); //using HTML tags
+
+    var num1;
+    num1 = prompt("What is your number? ");
+    //default datatype from prompt() is string or text
+
+    var numInteger = parseInt (num1); //parsing my string to an numInteger
+
+    //multiply
+    result = numInteger * numInteger;
+    alert("Multiplication for your given number: " + result);
+		//this is a var declare and value assigned
+
+
+    var n1; //declare vars
+    var n2;
+    //taking in and parsing numbers
+    n1 = parseInt (prompt("What is your first number?"));
+    n2 = parseInt (prompt("What is your seccond number?"));
+
+    //IF statement, selection statement
+    if(n1*n2){
+        //code to execute when the if statement evaluates to true
+        document.write("n1 is multiplied to n2"); //runs this code
+    }else{
+        //code to execute when the if statement evaluates to false
+        document.write("If n1 = 0 then any number multiplied to n2 is = 0");
+    }
+    alert("Multiplication for num1*num2: " + result);
+
+    var vehicle; //declare vars
+    var lifespan;
+
+    //taking in and parsing numbers
+    vehicle = parseInt (prompt("What is the make year of your vehicle?"));
+    lifespan = parseInt (prompt("How old is your vehicle? "));
+
+    if((vehicle < 2015) || (lifespan > 5)) {
+        //if either side evaluates to true, give 2 pts
+        document.write("<br />You have to change your vehicle");
+    }
+    alert("You have to change your vehicle");
+
+	</script>
+  </head>
+  <body>
+	<p>In multiplication, the number being multiplied is called the multiplicand and the number by which it is being multiplied is called the multiplier. The product of any number multiplied by a ‘zero’ is zero. The product of any number multiplied by ‘one’ is equal to the number itself. In a multiplication operation, the product can be equal to the numbers being multiplied or greater than, but never the smaller, except when one of the number is zero. For every multiplication fact there are two division facts. Thus, the product divided by the multiplicand equals the multiplier and the product divided by the multiplier equals the multiplicand.  In multiplication operation, the change in the order of the numbers being multiplied does not change the product. he division fact is used for finding the missing multiplicand or multiplier.</p>
+	<a href="page2.html">Some facts about multiplication</a>
+
+
+  </body>
+</html>
